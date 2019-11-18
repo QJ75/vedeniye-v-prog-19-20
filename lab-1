@@ -1,0 +1,49 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    cout<<"Задание 1"<<endl;
+    int a,b,s,p;
+    cout<<"Введите стороны прямоугольника"<<endl;
+    cin>>a;
+    cin>>b;
+    s=a*b;
+    p=(a+b)*2;
+    cout<<"Площадь = "<<s<<", Периметр ="<<p<<endl;
+    cout<<"Задание 2"<<endl;
+    float l,d;
+    cout<<"Input d"<<endl;
+    cin>>d;
+    l=d*3.14;
+    cout<<"L="<<l<<endl;
+    cout<<"Задание 3"<<endl;
+    float a1,b1,s1;
+    cout<<"введите значения a и b"<<endl;
+    cin>>a1;
+    cin>>b1;
+    s1=(a1+b1)/2;
+    cout<<"среднее арифметическое= "<<s1<<endl;
+    cout<<"Задание 4"<<endl;
+    float sum,proizv,chast,a2,b2,raz;
+    cout<<"ввеите числа"<<endl;
+    cin>>a2;
+    cin>>b2;
+    sum=a2+b2;
+    raz=a2-b2;
+    proizv=a2*b2;
+    chast=a2/b2;
+    cout<<"Частное="<<chast<<endl<<" Разность="<<raz<<endl<<" Произведение="<<proizv<<endl<<" сумма="<<sum<<endl;
+    cout<<"Задание 5"<<endl;
+    float sum3,proizv3,chast3,a3,b3,raz3;
+    cout<<"Введите числа"<<endl;
+    cin>>a2;
+    cin>>b2;
+    a3=abs(a3);
+    b3=abs(b3);
+    sum3=a3+b3;
+    raz3=a3-b3;
+    proizv3=a3*b3;
+    chast=a3/b3;
+    cout<<"Частное модилей="<<chast3<<endl<<" Разность модилей="<<raz3<<endl<<" Произведение модилей="<<proizv3<<endl<<" сумма модилей="<<sum3<<endl;
+    return 0;
+}
