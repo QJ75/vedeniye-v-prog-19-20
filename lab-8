@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+    cout << "лабораторная 8 \n";
+    cout << "Задача 1 \n";
+    int A, B, C, a, b, X, Y;
+    cout << "Введите А ";
+    cin >> A;
+    cout << "Введите B ";
+    cin >> B;
+    if (A==B) {
+        A=B=0;
+        cout<<"При изменении А и В ="<<A<<endl;
+    }
+    else {
+        A=B=max(A,B);
+        cout<<"При изменении А и В ="<<A<<endl;
+    }
+    
+    
+    
+    return 0;
+}
