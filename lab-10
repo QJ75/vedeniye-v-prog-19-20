@@ -1,0 +1,78 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float cost;
+    cout<<"Задание 1" << endl;
+    cout<<"Введите цену конфет"<<endl;
+    cin>>cost;
+    for (int i=1; i<=10; i++)
+    {
+        cout<<cost*0.1*i<<endl;
+    }
+    
+    
+    int n;
+    double rez;
+    cout<<"Задание 2" << endl;
+    cout<<"введите N"<<endl;
+    cin>>n;
+    rez=1;
+    for (int i=1; i<=n; i++)
+    {
+        rez=rez*(1+i*0.1);
+    }
+    cout<<rez;
+    
+    
+    int N,z,i;
+    cout<<"Задание 3" << endl;
+    cout<<"введите число"<<endl;
+    cin>>N;
+    z=0;
+    i=1;
+    while (i<=(2*N-1))
+    {
+        z+=i;
+        i+=2;
+        cout<<z<<endl;
+    }
+    cout<<"Квадрат числа="<<z;
+    
+    
+     int d;
+    float x,a;
+    cout<<"Задание 4" << endl;
+    cout<<"Введите A"<<endl;
+    cin>>a;
+    cout<<"Введите N"<<endl;
+    cin>>d;
+    x=1;
+    i=1;
+    while (i<=d)
+    {
+        x=x+pow(a,i);
+        i++;
+    }
+    cout<<"Результат="<<x;
+    
+    
+     int m;
+    float y,A;
+    cout<<"Задание 5" << endl;
+    cout<<"Введите A"<<endl;
+    cin>>A;
+    cout<<"Введите N"<<endl;
+    cin>>m;
+    y=1;
+    i=1;
+    while (i<=m)
+    {
+        y=y+(pow(A,i))*pow(-1,i);
+        i++;
+    }
+    cout<<"Результат="<<y;
+    
+    return 0;
+}
