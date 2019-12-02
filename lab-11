@@ -1,0 +1,85 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    setlocale(0, " ");
+    int A,B,C,D,N,K,s,P,k,S,a,b;
+    cout<<"Задание 1" << endl;
+    cout<<"Введите А"<<endl;
+    cin>>A;
+    cout<<"Введите В"<<endl;
+    cin>>B;
+    for (int i=A; i<=B; i++)
+    {
+        for (int k=1; k<=i; k++)
+        {      cout<<i<<endl;
+        }
+    }
+    
+    cout << "Задание 2" << endl;
+	cout << "Введите А" << endl;
+	cin >> C;
+	cout << "Введите В" << endl;
+	cin >> D;
+	while (C >= 0)
+	{
+		C = C - D;
+	}
+	cout <<"ответ="<< C+D;
+	
+	
+	cout << "Задание 3" << endl;
+	cout << "Введите N" << endl;
+	cin >> N;
+	K = 1;
+    s = 0;
+	while (s < N)
+	{
+        s = s + K;
+		++K;
+	}
+	cout <<"К="<<K<<" искомая сумма= "<<s;
+
+	cout << "Задание 4" << endl;
+	cout << "Введите P" << endl;
+	cin >> P;
+	k = 0;
+    S = 1000;
+	while (S <= 1100)
+	{
+		S = S + S*P/100;
+		++k;
+	}
+	cout <<"месяцы="<<k<<" итоговый размер вклада= "<<S;
+	
+	cout << "Задание 5" << endl;
+	cout << "Введите a b" << endl;
+	cin >> a >>b;
+ while (a!=b)
+    {
+        if (a>b)
+        {
+            while (a>b)
+		{
+			a-=b;
+		}
+        }
+        else
+        {
+            while (b>a)
+		{
+			b-=a;
+		}
+        }
+    }
+    cout<<"НОД="<<a<<endl;
+	
+    
+    
+  return 0;
+    
+}
