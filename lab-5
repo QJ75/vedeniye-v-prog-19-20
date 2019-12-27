@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stdio.h>
+
+int main()
+{
+    cout<<("lab-5\n");
+    cout<<"задание 1 \n";
+    int h, g;
+    cout <<("введите значение в битах");
+    cin>>h;
+    g=h/1024;
+    cout<<h<<("")<<g<<endl;
+    
+    cout<<"задание 2 \n";
+    float A,B, SUM;
+    cout <<("введите значение A");
+    cin>>A;
+    cout <<("введите значение B");
+    cin>>B;
+    if (A<B && A<0 && B<0)
+    {
+       cout<< ("");
+    }
+    else
+    {
+       SUM=A/B;
+       cout<<("")<<SUM<<("");
+    }
+    
+    cout<<"задание 3 \n";
+    float A,B, SUM;
+    
+    
+    return 0;
+}
