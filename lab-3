@@ -1,0 +1,99 @@
+/1/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int
+main ()
+{
+  cout << "введите значения А В С" << endl;
+  float a, b, c;
+  cin>>a>>b;
+  c=a;
+  a=b;
+  b=c;
+  cout << "A=" <<a<< ", B=" <<b;
+}
+
+/2/
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x,a,b,c;
+    cout<<"Vведите значения А В С"<<endl;
+    cin>>a>>b>>c;
+    x=a;
+     a=c;
+      c=b;
+       b=x;
+    cout<<"A="<<a<<", B="<<b<<", C="<<c<<endl;
+}
+
+/3/
+#include <iostream>
+using namespace std;
+int main()
+{
+    float x,a,b,c;
+    cout<<"Vведите значения А В С"<<endl;
+    cin>>a>>b>>c;
+    x=a;
+     a=b;
+      b=c;
+       c=x;
+    cout<<"A="<<a<<", B="<<b<<", C="<<c<<endl;
+}
+
+/4/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x;
+    cout<<"введите значения X"<<endl;
+    cin>>x;
+    cout<<"Y="<<3*pow(x,6)-6*pow(x,2)-7<<endl;
+}
+
+/5/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x;
+    cout<<"введите значения X"<<endl;
+    cin>>x;
+    cout<<"Y="<<4*pow(x-3,6)-6*pow(x-3,2)+2<<endl;
+}
+
+/6/
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a,A;
+    cout<<"введите значения A"<<endl;
+    cin<<A;
+    A=A*A;
+    a=A*A;
+    a=a*a;
+    cout<<a<<endl;
+}
+
+/7/
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a1,a2,a3;
+    cout<<"введите значения (число)"<<endl;
+    cin>>a1;
+    a2=a1*a1;
+     a3=a1*a2;
+      a3=a3*a2; //5
+       a1=a3*a3; //10
+        a2=a1*a3;
+    cout<<a2;
+}
